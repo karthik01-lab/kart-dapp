@@ -1,0 +1,21 @@
+{
+  "name": "contract-template",
+  "private": true,
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "move:test": "node ./scripts/move/test",
+    "move:compile": "node ./scripts/move/compile",
+    "move:publish": "cross-env MODULE_PUBLISHER_ACCOUNT_ADDRESS=0x2b168820647e79bc7afeb4541b9ef88275362e3d816b4b174709449e67e5d394 MODULE_PUBLISHER_ACCOUNT_PRIVATE_KEY=95f22f6065517c1e11caf748e0f8b7a77ceb5eb6d25da3ff7b4139352a1426a2 node ./scripts/move/publish",
+    "move:upgrade": "node ./scripts/move/upgrade"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^3.1.3",
+    "cross-env": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.1",
+    "dotenv": "16.3.1",
+    "tree-kill": "^1.2.2"
+  }
+}
